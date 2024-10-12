@@ -108,14 +108,28 @@ public class OnlineExamSystem {
             }
         }, TIMER_DURATION * 1000);
 
-        for (int i = 1; i <= 3; i++) { // Example:
-            System.out.println("Question " + i + ": What is the capital of India?");
+        for (int i = 1; i <= 1; i++) { // Example:
+            System.out.println("Question " + "1" + ": What is the capital of India?");
             System.out.println("1. Mumbai");
             System.out.println("2. Delhi");
             System.out.println("3. Hyderabad");
             System.out.print("Your answer: ");
             int answer = scanner.nextInt();
             currentUser.submitAnswer(i, answer);
+            System.out.println("Question " + "2" + ": What is the national bird of India?");
+            System.out.println("1. Parrot");
+            System.out.println("2. Peacock");
+            System.out.println("3. Crow");
+            System.out.print("Your answer: ");
+            int answer2 = scanner.nextInt();
+            currentUser.submitAnswer(i, answer2);
+            System.out.println("Question " + "3" + ": What is the nation animal of India?");
+            System.out.println("1. Lion");
+            System.out.println("2. Elephant");
+            System.out.println("3. Tiger");
+            System.out.print("Your answer: ");
+            int answer3 = scanner.nextInt();
+            currentUser.submitAnswer(i, answer3);
         }
 
         submitExam();
